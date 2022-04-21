@@ -13,15 +13,24 @@
         <button id="addBook">Add a new book</button>
         <dialog id="newBookDialog">
             <form method="dialog">
-                <label for="BookName">Book's name</label>
-                <input type="text" name="BookName" id="BookName">
-                <label for="Author">Author</label>
-                <input type="text" name="Author" id="Author">
-                <label for="Pages">Number of pages</label>
-                <input type="text" name="Pages" id="Pages">
-                <label for="ReadStatus">Finished?</label>
-                <input type="hidden" name="ReadStatus" value="false">
-                <input type="checkbox" name="ReadStatus" id="ReadStatus" value="true">
+                <div class="inputs">
+                    <div>
+                        <label for="BookName">Book's name</label>
+                        <input type="text" name="BookName" id="BookName">
+                    </div>
+                    <div>
+                        <label for="Author">Author</label>
+                        <input type="text" name="Author" id="Author">
+                    </div>
+                    <div>
+                        <label for="Pages">Number of pages</label>
+                        <input type="number" name="Pages" id="Pages">
+                    </div>
+                    <div>
+                        <label for="ReadStatus">Finished?</label>
+                        <input type="checkbox" name="ReadStatus" id="ReadStatus" value="true">
+                    </div>
+                </div>
                 <div class="form-btns">
                     <button value="cancel">Cancel</button>
                     <button id="confirmBtn" value="default">Confirm</button>
