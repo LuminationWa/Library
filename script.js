@@ -11,15 +11,27 @@ function removeElementsByClass(className){
     }
 }
 
-function Book(title, author, pages, readStatus) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    readStatus === true ? this.read = 'Read' : this.read = 'Not read yet';
-    this.info = function() {
+// function Book(title, author, pages, readStatus) {
+//     this.title = title;
+//     this.author = author;
+//     this.pages = pages;
+//     readStatus === true ? this.read = 'Read' : this.read = 'Not read yet';
+//     this.info = function() {
+//         return `${title} by ${author}, ${pages} pages, ${read}.`;
+//     }
+// };
+
+class Book {
+    constructor(title, author, pages, readStatus) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        readStatus === true ? this.read = 'Read' : this.read = 'Not read yet';
+    }
+    info() {
         return `${title} by ${author}, ${pages} pages, ${read}.`;
     }
-};
+}
 
 function makeBookCard() {
     // Resets displayed books and then makes a bookcard for each one
